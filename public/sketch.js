@@ -31,7 +31,9 @@ function setup() {
     background(255);
     fill(0);
     
-    socket = io.connect('https://shrouded-caverns-08918.herokuapp.com/'); //for heroku
+    //you will need your own heroku server here:
+    socket = io.connect(''); //for heroku
+    
     socket2 = io.connect('http://localhost:3000'); // second socket to localhost
 
     socket.on('permissions', permissions);
